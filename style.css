@@ -1,23 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 
 *{
+    /* Sets default margin and padding to 0 for all elements */
     padding: 0;
     margin: 0;
+    /* Tells browser to include padding and border in total width */
     box-sizing: border-box;
     font-family: "Teko",sans-serif;
 
 }
 
-/* Making body a flex container, 100vh and flex direction column */
-html,body{
-    /* min height for body be size of viewport */
-    min-height: 100%;
-    /* make a flex container */
-    display: flex;
-    /* Make flex items display in column direction */
-    flex-direction: column;
-    background-color: #1F2937;
+html{
+    /* Setting height to 100% of viewport*/
+    height: 100%;
 }
 
-.navbar{
+body{
+   /* With html element receiving height value above, 
+   we are now giving intial height that matches html height */
+   /* Allows body to grow taller if content outgrows visible page */
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: #1F3927;
 }
+
+/* Working on main section */
+main{
+    display: flex;
+    flex: 1;
+    /* Make flex items display top to bottom */
+    flex-direction: column;
+    /* makes element as big as parent element (body)*/
+    width: 100%;
+    /* adding margin to keep centered,top and bottom 0, left and right auto */
+    margin: 0 auto;
+}
+
+nav{
+    /* make nav flex-container */
+    display: flex; 
+    /* specify size of the gap between the rows and columns in flexbox*/
+    gap:20px;
+}
+
+/* LEFT OFF HERE. also choosing new font for everything.... */
+#headerlogo{
+    font-size: 24px;
+    color: #000000;
+    font-weight: 600;
+}
+
+
+
+
