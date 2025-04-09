@@ -35,6 +35,7 @@ main{
     width: 100%;
     /* adding margin to keep centered,top and bottom 0, left and right auto */
     margin: 0 auto;
+    padding: 20px;
 }
 
 nav{
@@ -64,9 +65,9 @@ a{
     color: white;
 }
 
-a:hover{
+/* a:hover{
     color: green;
-}
+} */
 
 /* Working on main text */
 .main-text{
@@ -107,7 +108,7 @@ a:hover{
     font-size: 18px;
 }
 
-#sign-up-button{
+.sign-up-button{
     margin-top: 14px;
     color: white;
     background-color: #114320;
@@ -118,7 +119,7 @@ a:hover{
     width: 75px;
 }
 
-#sign-up-button:hover{
+.sign-up-button:hover{
     background-color: green;
     cursor: pointer;
 }
@@ -162,7 +163,81 @@ a:hover{
     border: 2px solid green;
     border-radius: 6px;
 }
-/* Working on thirs container */
+
+/* Working on third container */
+.third-section{
+    background-color: #114320;
+    flex: 1;
+
+}
+#quote-container{
+    /* making qoute container a flex container and centering items in container */
+    display: flex;
+    flex-direction: column;
+    /* Bakground color */
+    background-color: white;
+    /* adding width to quote container and centering */
+    width: 400px;
+    margin: 80px auto;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+#quote{
+    /* Style of the font size, font-weight and font style */
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+#quotee{
+    align-self: self-end;
+    font-weight: 600;
+    color: #114320;
+}
+
+/* fourth container */
+.fourth-section{
+    background-color: white;
+    flex: 1;
+}
+.call-to-action{
+    /* making container a flex container */
+    display: flex;
+    background-color: black;
+    padding: 1.4em;
+    border-radius: 6px;
+    max-width: 700px;
+    min-width: 600px;
+    margin: 5em auto;
+    color: white;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+}
+#text p{
+    font-weight: lighter;
+}
+.call-to-action .sign-up-button{
+    min-width: 100px;
+    border: 2px solid #E5E7EB;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2em;
+    letter-spacing: 0.1em;
+
+
+}
+
+
+
+
+
+
 
 
 
