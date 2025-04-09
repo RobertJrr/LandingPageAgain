@@ -25,7 +25,7 @@ body{
    background-color: #1F3927;
 }
 
-/* Working on main section */
+/* Working on MAIN SECTION */
 main{
     display: flex;
     flex: 1;
@@ -70,10 +70,104 @@ a:hover{
 
 /* Working on main text */
 .main-text{
+    flex: 4;
     /* Making .main-text a flex container */
-    
-
+    display:flex;
+    gap: 1em;
+    margin-top: 40px;
+    color: white;
 }
+
+.main-text div{
+    background-color: black;
+    border-radius: 10px;
+    /* setting growth factor, shrink factor and basis */
+    flex: 1 1 300px;
+    /* max height for flex items */
+    max-height: 300px;
+    /* min width for flex items */
+    min-width: 300px;
+    /* Adding adding */
+    padding: 10px;
+}
+.main-text #place-holder{
+    /* aligning placeholder text in container */
+    /* make div a flex containter so elements within are flex items and can be shifted */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* modifying each child element of div .sign-up */
+.sign-up h2{
+    font-size: 48px;
+}
+
+.sign-up p{
+    font-size: 18px;
+}
+
+#sign-up-button{
+    margin-top: 14px;
+    color: white;
+    background-color: #114320;
+    font-weight: 600;
+    padding: 6px 20px;
+    border-radius: 8px;
+    border: none;
+    width: 75px;
+}
+
+#sign-up-button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+/* SECOND CONTAINER */
+.second-section{
+    background-color: white;
+    /* shorthand flex property to grow, shrink and flex basis
+    1 1 0%  */
+    flex: 1;
+    /* Make a flex container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+/* modifying the #random element flex item */
+#random{
+    font-size: 36px;
+    font-weight: bold;
+     margin-bottom: 30px;
+}
+
+.boxes-container{
+    /* make .boxes-container a flex container */
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100px;
+}
+
+.green-box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid green;
+    border-radius: 6px;
+}
+/* Working on thirs container */
+
+
+
+
+
 
 
 
